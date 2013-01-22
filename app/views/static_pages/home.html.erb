@@ -1,0 +1,320 @@
+    <!-- Wrap the .navbar in .container to center it on the page and provide easy way to target it with .navbar-wrapper. -->
+    <div class="container navbar-wrapper">
+
+      <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+          <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Project name</a>
+          <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+		  <%= image_tag('restaurant2.jpg')%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>¡Descubre que comer!</h1>
+              <p class="lead">Encuentra toda la carta de los restaurantes cercanos a ti</p>
+			  <br/>
+			  <div class="controls">
+			      <input style="float:left" type="text" id="inputEmail" class="input-xlarge" placeholder="Ingresa tu colonia ó CP">
+              	  <a style="margin-left:1%; margin-top:-1%" class="btn btn-large btn-primary" href="#"><i class="icon-search icon-white"></i> Buscar</a>
+			  </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+		  <%= image_tag('cover1.jpg')%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>¡Descubre que comer!</h1>
+              <p class="lead">Encuentra toda la carta de los restaurantes cercanos a ti</p>
+			  <br/>
+			  <div class="controls">
+			      <input style="float:left" type="text" id="inputEmail" class="input-xlarge" placeholder="Ingresa tu colonia ó CP">
+              	  <a style="margin-left:1%; margin-top:-1%" class="btn btn-large btn-primary" href="#"><i class="icon-search icon-white"></i> Buscar</a>
+			  </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+		  <%= image_tag('restaurant3.jpg')%>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>¡Descubre que comer!</h1>
+              <p class="lead">Encuentra toda la carta de platillos de los restaurantes cercanos a ti</p>
+			  <br/>
+			  <div class="controls">
+			      <input style="float:left" type="text" id="inputEmail" class="input-xlarge" placeholder="Ingresa tu colonia ó CP">
+              	  <a style="margin-left:1%; margin-top:-1%" class="btn btn-large btn-primary" href="#"><i class="icon-search icon-white"></i> Buscar</a>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+			<div class="frame_restaurant">
+				<div class="frame_image_restaurant">
+					<%= image_tag ('rest1.jpg'), style:"margin: 0% 0% 2% 0%; max-height: 200px; float:left"%>
+					<h3>Gastro Bar</h3>
+					<i class="icon-map-marker"></i><span>Tenyson No.117, esquina Mazarik Col. Polanco, México DF.</span>
+						<%= link_to "Ver mapa", "#", style:"font-size: 13px"%>
+						<br/>
+					<i class="icon-tag"></i><span><%= link_to "http://www.gastrobar38.com", "http://www.gastrobar38.com", style: "font-size:10px" %></span>
+					<%= image_tag ('facebook.png'), style: "width:20px; float:right; margin-right:25%"%>
+					<%= image_tag ('twitter.png'), style: "width:20px;float:right"%>
+					<br/>
+					<br/>
+					<br/>					
+					<hr>
+					<%= image_tag "menu1.png" %>
+		          	<p><a class="btn" href="#">Ver mas detalles &raquo;</a></p>
+				</div>
+			</div>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          	<div class="frame_restaurant">
+				<div class="frame_image_restaurant">
+					<%= image_tag ('rest2.jpg'), style:"margin: 0% 0% 2% 0%; max-height: 200px; float:left"%>
+					<h3>iHOP</h3>
+					<i class="icon-map-marker"></i><span>Bvld. Manuel Ávila Camacho No.1895
+					Ciudad Satélite, Naucalpan, México</span><br/>
+					<%= link_to "Ver mapa", "#", style:"font-size: 13px"%>
+					<br/>
+					<i class="icon-tag"></i><span><%= link_to "www.ihopmexico.com", "www.ihopmexico.com", style: "font-size:10px" %></span>
+						<%= image_tag ('facebook.png'), style: "width:20px; float:right; margin-right:25%"%>
+						<%= image_tag ('twitter.png'), style: "width:20px;float:right"%>
+						<br/>
+						<br/>
+						<br/>
+					<hr>
+					<%= image_tag "menu3.png" %>
+		          	<p><a class="btn" href="#">Ver mas detalles &raquo;</a></p>
+				</div>
+			</div>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          	<div class="frame_restaurant">
+				<div class="frame_image_restaurant">
+					<%= image_tag ('rest3.jpg'), style:"margin: 0% 0% 2% 0%; max-height: 200px; float:left"%>
+					<h3>ASTRID & GASTON</h3>
+					<i class="icon-map-marker"></i><span>Lopez Cotilla #2009, Guadalajara, MX.</span>
+					<br/>
+						<%= link_to "Ver mapa", "#", style:"font-size: 13px"%>
+						<br/>
+					<i class="icon-tag"></i><span><%= link_to "www.astridygaston.com", "www.astridygaston.com", style: "font-size:10px" %></span>
+					<%= image_tag ('facebook.png'), style: "width:20px; float:right; margin-right:25%"%>
+					<%= image_tag ('twitter.png'), style: "width:20px;float:right"%>
+					<br/>
+					<br/>
+					<br/>
+					<hr>
+					<%= image_tag "menu4.png" %>
+		          	<p><a class="btn" href="#">Ver mas detalles &raquo;</a></p>
+				</div>
+			</div>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+	 <hr>
+	 <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+			<div class="frame_restaurant">
+				<div class="frame_image_restaurant">
+					<%= image_tag ('chef1.jpg'), style:"margin: 0% 0% 2% 0%; max-height: 200px; float:left"%>
+					<h3>Chef Mary</h3>
+					<i class="icon-map-marker"></i><span>Centro, México DF.</span>
+					<i class="icon-tag"></i><span><%= link_to "http://www.gastrobar38.com", "http://www.gastrobar38.com", style: "font-size:10px" %></span>
+					<%= image_tag ('facebook.png'), style: "width:20px; float:left; margin-left:5%"%>
+					<%= image_tag ('twitter.png'), style: "width:20px; float:left"%>
+					<br/>
+					<br/>
+					<br/>					
+					<hr>
+					<%= image_tag "ind1.png" %>
+					<p><a class="btn" href="#">Ver mas detalles &raquo;</a></p>
+				</div>
+			</div>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          	<div class="frame_restaurant">
+				<div class="frame_image_restaurant">
+					<%= image_tag ('chef2.jpg'), style:"margin: 0% 0% 2% 0%; max-height: 200px; float:left"%>
+					<h3>Chef Mary</h3>
+					<i class="icon-map-marker"></i><span> Roma, México DF.</span>
+					<i class="icon-tag"></i><span><%= link_to "http://www.gastrobar38.com", "http://www.gastrobar38.com", style: "font-size:10px" %></span>
+					<%= image_tag ('facebook.png'), style: "width:20px; float:left; margin-left:5%"%>
+					<%= image_tag ('twitter.png'), style: "width:20px; float:left"%>
+					<br/>
+					<br/>
+					<br/>
+					<hr>
+					<%= image_tag "ind2.png" %>
+		          	<p><a class="btn" href="#">Ver mas detalles &raquo;</a></p>
+				</div>
+			</div>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          	<div class="frame_restaurant">
+				<div class="frame_image_restaurant">
+					<%= image_tag ('chef3.jpg'), style:"margin: 0% 0% 2% 0%; max-height: 200px;float:left"%>
+					<h3>Chef Mary</h3>
+					<i class="icon-map-marker"></i><span>Polanco, México DF.</span>
+					<i class="icon-tag"></i><span><%= link_to "http://www.gastrobar38.com", "http://www.gastrobar38.com", style: "font-size:10px" %></span>
+					<%= image_tag ('facebook.png'), style: "width:20px; float:left; margin-left:5%"%>
+					<%= image_tag ('twitter.png'), style: "width:20px; float:left"%>
+					<br/>
+					<br/>
+					<br/>					
+					<hr>
+					<%= image_tag "ind3.png" %>
+		          	<p><a class="btn" href="#">Ver mas detalles &raquo;</a></p>
+				</div>
+			</div>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+	 
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+      <h2 class="featurette-heading">Descubre platillos<span class="muted"> y donde los puedes comer</span></h2>
+
+		 <div id="contenedor" class="clearfix masonry">
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food1.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food2.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food3.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food4.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food5.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food6.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food7.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food8.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food9.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food10.jpg" %>
+				<div class="flag_price">
+				 	$80
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food11.jpg" %>
+				<div class="flag_price">
+				 	$60
+				</div>
+			</div>
+			<div class="box photo col3 masonry-brick">
+				<%= image_tag "food12.jpg" %>
+				<div class="flag_price">
+				 	$90
+				</div>
+			</div>
+		  </div>
+
+      
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2012 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
